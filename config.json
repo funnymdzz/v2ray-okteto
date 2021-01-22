@@ -1,29 +1,25 @@
 {
-  "inbounds": [
-    {
-      "port": 8080,
-      "listen":"::",
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "f011c012-5f1d-418c-9494-d24d77a9d8f9",
-            "alterId": 520
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-        "path": "/xiaonuo"
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "protocol": "vmess",
+    "port": 8080,
+    "settings": {
+      "clients": [
+        {
+          "id": "7b193f93-f2e4-49d4-9682-0f6bbcc619f1",
+          "alterId": 64
         }
-      }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws"
     }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ]
+  },
+  "inboundDetour": [],
+  "outbound": {
+    "protocol": "freedom",
+   "settings": {}
+  }
 }
