@@ -13,8 +13,6 @@ RUN     apk add --no-cache --virtual .build-deps ca-certificates wget \
  
 ADD entrypoint.sh /entrypoint.sh
 
-COPY config.txt /v2raybin/config.json
-
 RUN chmod +x /entrypoint.sh
 
 ENV URL https://raw.githubusercontent.com/funnymdzz/v2ray-okteto/main/config.json
